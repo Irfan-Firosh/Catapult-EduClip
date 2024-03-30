@@ -31,4 +31,3 @@ def similar_request(subject):
 '''
     response = model.generate_content(request_text)
     return response.text.split('\n')
-print(similar_request("what is an integral"))
