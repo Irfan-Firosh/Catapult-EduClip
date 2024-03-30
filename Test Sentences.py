@@ -59,3 +59,13 @@ def kum(id, Question):
     corresponding_elements = [to_return[index] for index in top_indexes]
 
     return corresponding_elements
+
+if __name__ == "__main__":
+    # Sample input
+    video_id = "zEQZpTizgLo"
+    question = "What is the height of a binary tree?"
+
+    # Call the kum function
+    result = kum(video_id, question)
+    # Print the result
+    print("Result:", result)
