@@ -77,13 +77,24 @@ def getText(start, end):
             break
     return result
 
+def filter(items, duration: int):
+    for item in items:
+        if (item[1]["start"] - item[0]["start"] < duration/2):
+            items.remove(item)
+    return items
+
+
 def getSegment(id, duration: int):
     clearDir()
     get_Transcript(id)
     ret = completeExtract(duration)
+    ret = filter(ret, duration)
+    print(ret)
     textSeg = []
     for item in ret:
         str = " "
         str = getText(item[0]["start"], item[1]["start"])
         textSeg.append(str)
     return ret, textSeg
+
+getSegment("yvTZwGQYHww", 60)
