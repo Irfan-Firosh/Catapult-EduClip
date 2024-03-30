@@ -2,3 +2,4 @@ youtube-search-python==1.6.6
 pytube==15.0.0
 streamlit==1.32.2
 youtube-transcript-api==0.6.2
+google-generativeai==0.4.1
