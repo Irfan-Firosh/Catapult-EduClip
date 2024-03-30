@@ -1,10 +1,14 @@
 from sentence_transformers import SentenceTransformer, util
+from GeminiSimilarSentences import *
+from segment import *
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 
 
 # Function that returns a dictionary
+a, kumbucket2 = getSegment("M42uDLGRSpI", 50)
+
 kumbucket = [
     {
         "text": "[Music]",
@@ -231,13 +235,18 @@ kumbucket = [
 def similarity(original, values):
     # Dummy implementation
     result = {}
-    originals = [original]
+    originals = similar_request(original)
+    #originals = [original]
 
     embed1 = model.encode(originals, convert_to_tensor= True)
     embed2 = model.encode(values, convert_to_tensor=True)
 
     cosine_scores = util.cos_sim(embed1, embed2)
-    return cosine_scores
+    max_values = []
+    for row in cosine_scores:
+        max_values.append(max(row))
+
+    return max_values
     
 
 # Main code
@@ -249,19 +258,25 @@ if __name__ == "__main__":
 
     # Call the similarity function
     original_string = "What is remainder theorem"
-    random_sentences = [entry["text"] for entry in kumbucket]
-    cosine_scores = similarity(original_string, random_sentences)
+    #random_sentences = [entry["text"] for entry in kumbucket]
+    cosine_scores = similarity(original_string, kumbucket2)
 
     # Print the similarity scores
     pairs = []
-    for i in range(cosine_scores.shape[0]):
-        for j in range(cosine_scores.shape[1]):
-            pairs.append({"index": [i, j], "score": cosine_scores[i][j]})
+    for i in range(len(cosine_scores)):
+        pairs.append({"index": i, "score": cosine_scores[i]})
 
         # Sort scores in decreasing order
     #pairs = sorted(pairs, key=lambda x: x["score"], reverse=True)
 
-    for i in range(10):
-        print("{} \t\t Index: {} \t\t Score: {:.4f}".format(
-        random_sentences[i], pairs[i]["index"], pairs[i]["score"]
-    ))
+    pairs = sorted(pairs, key=lambda x: x["score"], reverse=True)
+
+    #for i in range(min(10, len(pairs))):
+        #print("{} \t\t Index: {} \t\t Score: {:.4f}".format(
+         #   kumbucket2[pairs[i]["index"]],
+          #  pairs[i]["index"],
+           # pairs[i]["score"]
+        #))
+
+    to_return = [pair["index"] for pair in pairs[:5]]
+    print("Indexes to return:", to_return)
