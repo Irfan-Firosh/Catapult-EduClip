@@ -26,38 +26,59 @@ def segmentFile(duration: int):
         json_data = json.load(file)
     last = json_data[-1]
     vid_length = last["start"] + last["duration"]
-    print(vid_length)
     segments = int(math.ceil(vid_length/duration))
-    print(segments)
     ret.append(json_data[0])
     for i in range(0,segments):
         start = (i/(segments)) * vid_length
-        print(start)
         for item in json_data:
             error = abs(item["start"]- start)/item["start"]
             if error <= 0.05:
                 #print(item)
                 ret.append(item)
-    print(ret)
-    print(len(ret))
     return ret
 
 def completeExtract(duration: int):
     path = f'{transcript_path}/transcript.json'
     with open(path, 'r') as file:
         json_data = json.load(file)
-    ret = []
     segments = segmentFile(duration)
-    for item in segments[:-1]:
-        temp = []
-        temp.append(item)
-        for i, json in enumerate(json_data):
-            if item["start"] == json["start"]:
-                temp.append(json_data[i-1])
-        ret.append(temp)
+    ret = []
+    ends = []
+    starts = []
+    for item in segments:
+        starts.append(item["start"])
+    for index, item in enumerate(json_data):
+        if (item["start"] in starts):
+            ends.append(index)
+    i = 0
+    for end in ends[1:]:
+        ret.append([segments[i], json_data[end - 1]])
+        i = i + 1
     ret.append([segments[-1], json_data[-1]])
-    
+    return ret
 
-clearDir()
-get_Transcript("yvTZwGQYHww")
-completeExtract(60)
+def getText(start, end):
+    result = ""
+    found_beginning = False
+    path = f'{transcript_path}/transcript.json'
+    with open(path, 'r') as file:
+        json_data = json.load(file)
+    for item in json_data:
+        if item["start"] == start:
+            found_beginning = True
+        if found_beginning:
+            result += item["text"] + " "
+        if item["start"] == end:
+            break
+    return result
+
+def getSegment(id, duration: int):
+    clearDir()
+    get_Transcript(id)
+    ret = completeExtract(duration)
+    textSeg = []
+    for item in ret:
+        str = " "
+        str = getText(item[0]["start"], item[1]["start"])
+        textSeg.append(str)
+    return ret, textSeg
