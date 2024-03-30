@@ -89,7 +89,6 @@ def getSegment(id, duration: int):
     get_Transcript(id)
     ret = completeExtract(duration)
     ret = filter(ret, duration)
-    print(ret)
     textSeg = []
     for item in ret:
         str = " "
