@@ -1,6 +1,6 @@
 import pathlib
 import textwrap
-
+import json
 import google.generativeai as genai
 
 from IPython.display import display
@@ -16,11 +16,26 @@ def to_markdown(text):
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 def user_request(subject):
-    request_text = f"Generate questions for {subject} and give answers"
-    response = model.generate_content(request_text)
-    return response.text
+    question_text = f"Generate questions for {subject} do NOT give the answers"
+    question = model.generate_content(question_text)
+    #print("Response content:", response.text)
+    with open("question.txt", "w") as file:
+        file.write(question.text)
+   
+    answer = model.generate_content(question.text)
+    with open("answer.txt", "w") as file:
+        file.write(answer.text)
+
+    # Return the path to the created .txt file
+  
+  
+
+
 WOLFRAM_ALPHA_API = 'X4LJTG-5HGW5E29XA'
 import requests
+
+
+
 
 def execute_query(input_query, app_id):
     base_url = "http://api.wolframalpha.com/v1/simple"
