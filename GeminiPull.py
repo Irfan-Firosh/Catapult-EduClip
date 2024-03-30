@@ -12,18 +12,25 @@ GOOGLE_API_KEY = config.GOOGLE_API_KEY
 
 def to_markdown(text):
   text = text.replace('•', '  *')
-  return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 def user_request(subject):
-    question_text = f"Generate questions for {subject} do NOT give the answers"
+    question_text = f"Generate questions for {subject} do NOT give the answers, do NOT generate in LATEX"
     question = model.generate_content(question_text)
-    #print("Res"ponse content:", response.text)
     with open(f"{path}question.txt", "w") as file:
         file.write(question.text)
    
     answer = model.generate_content(question.text)
     with open(f"{path}answer.txt", "w") as file:
         file.write(answer.text)
-    
+
+    # Return the path to the created .txt file
+  
+response = user_request("Give me one eigen vector problem")
+print(response)
+# Replace 'YOUR_APP_ID' with your actual Wolfram Alpha AppID
+
+# Write the content to a file or display the image
+#with open("wolfram_result.png", "wb") as f:
+    #f.write(image_content)
