@@ -31,7 +31,12 @@ def segmentFile(duration: int):
     for i in range(0,segments):
         start = (i/(segments)) * vid_length
         for item in json_data:
-            error = abs(item["start"]- start)/item["start"]
+            div = None
+            if item["start"] == 0:
+                div = 0.1
+            else:
+                div = item["start"]
+            error = abs(item["start"]- start)/div
             if error <= 0.05:
                 #print(item)
                 ret.append(item)
