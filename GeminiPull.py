@@ -16,19 +16,20 @@ def to_markdown(text):
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 def user_request(subject):
-    question_text = f"Generate questions for {subject} do NOT give the answers, do NOT generate in LATEX"
+    question_text = f"Generate questions for {subject} do NOT give the answers, NO SPACE BETWEEN EACH QUESTION do NOT GENERATE LATEX NO TITLE JUST QUESTIONS. "
     question = model.generate_content(question_text)
     with open(f"{path}question.txt", "w") as file:
         file.write(question.text)
    
-    answer = model.generate_content(question.text)
+    answer = model.generate_content(f'{question.text} NO LINE BETWEEN EACH ANSWER and NOT IN LATEX no title')
     with open(f"{path}answer.txt", "w") as file:
         file.write(answer.text)
 
     # Return the path to the created .txt file
-  
-response = user_request("Give me one eigen vector problem")
-print(response)
+def generate(prompt):
+    response = user_request("Give me one eigen vector problem")
+
+generate("Eigen Values")
 # Replace 'YOUR_APP_ID' with your actual Wolfram Alpha AppID
 
 # Write the content to a file or display the image
