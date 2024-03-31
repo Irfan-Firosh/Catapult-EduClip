@@ -1,34 +1,29 @@
 import streamlit as st
-import os
-import time
-from GeminiPull import *
+import google.generativeai as genai
+import keys
 
+st.title("Question Bot")
+client = keys.GOOGLE_API_KEY  # Make sure keys.GOOGLE_API_KEY is correctly defined
 
-path = "../metadata/qna/"
+genai.configure(api_key=client)
+model = genai.GenerativeModel('gemini-pro')
 
-def clear_downloads():
-    for file in os.listdir(path):
-        path = os.path.join(path, file)
-        os.remove(path)
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
 
-with st.spinner("Generating Question..."):
-    clear_downloads()
-    while not os.path.exists(f"{path}question.txt"):
-        time.sleep(1)
-    while not os.path.exists(f"{path}answer.txt"):
-        time.sleep(1)
+if prompt := st.chat_input("Enter any questions you have"):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
 
-st.title("Questions and Answers")
-with open(f"{path}question.txt", "r") as file:
-    questions = file.read()
+    with st.spinner("Generating response..."):
+        stream = model.generate_content(prompt)
+        response = stream.text
+        st.session_state.messages.append({"role": "assistant", "content": stream.text})
 
-with open(f'{path}answer.txt', "r") as file:
-    answers = file.read()
-
-st.text_area("Questions", value=questions, height=400)
-st.text_area("Answer", value=answers, height=800)
-
-
-
-
+        with st.chat_message("assistant"):
+            st.markdown(response)

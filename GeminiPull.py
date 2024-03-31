@@ -1,6 +1,3 @@
-import pathlib
-import textwrap
-import json
 import google.generativeai as genai
 
 from IPython.display import display
@@ -25,13 +22,3 @@ def user_request(subject):
     with open(f"{path}answer.txt", "w") as file:
         file.write(answer.text)
 
-    # Return the path to the created .txt file
-def generate(prompt):
-    response = user_request("Give me one eigen vector problem")
-
-generate("Eigen Values")
-# Replace 'YOUR_APP_ID' with your actual Wolfram Alpha AppID
-
-# Write the content to a file or display the image
-#with open("wolfram_result.png", "wb") as f:
-    #f.write(image_content)

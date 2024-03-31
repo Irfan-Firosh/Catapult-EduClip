@@ -96,4 +96,3 @@ def getSegment(id, duration: int):
         textSeg.append(str)
     return ret, textSeg
 
-getSegment("yvTZwGQYHww", 60)

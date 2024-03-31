@@ -6,3 +6,4 @@ google-generativeai==0.4.1
 IPython==8.22.2
 sentence-transformers==2.6.1
 moviepy==1.0.3
+ffmpeg==1.4

@@ -1,6 +1,7 @@
 import streamlit as st
 from videoOperations import *
 from GeminiPull import *
+from editor import *
 import time
 
 st.title("Try EduClip")
@@ -9,6 +10,13 @@ def getVidId(options, name):
     for key in options:
         if options[key] == name:
             return key
+
+def get_num_files():
+    directory_path = "metadata/qna"
+    files_list = os.listdir(directory_path)
+    num_files = len(files_list)
+    return num_files
+
 
 video_id = None
 col1, col2 = st.columns(2, gap = "large")
@@ -54,12 +62,10 @@ with col1:
             video_id = getVidId(options, selected_vid)
             submit_button = st.form_submit_button(label='Submit Video')
         st.write(st.session_state.selected_vid)
-        st.write(video_id)
         
 
     if selected_vid:
         with st.spinner('Fetching Video...'):
-            generate(title_prompt)
             clear_downloads()
             downloadID(selected_vid, options)
         st.success('Done!')
@@ -71,15 +77,20 @@ with col1:
                 placeholder="Say something...."
             )
             if learn_query:
+                os.remove("metadata/qna/question.txt")
+                os.remove("metadata/qna/answer.txt")
                 with st.spinner('Generating Exercises....'):
-                    while not os.path.exists(f"metadata/qna/question.txt"):
-                        time.sleep(1)
-                st.page_link("pages/questions.py", label="Questions", icon="❓")
+                    user_request(learn_query)
+                    while(get_num_files() != 0):
+                        time.sleep(2)
+                    st.page_link("pages/questions.py", label="Exercises", icon="❓")
 
             if learn_query:
-                with st.form("view_video"):
-                    vidPath = get_video_path()
-                    videoFile = open(vidPath, 'rb')
-                    videoBytes = videoFile.read()
-                    st.video(videoBytes)
-                    submitted = st.form_submit_button(label="Done")
+                with st.spinner('Clipping Video'):
+                    with st.form("view_video"):
+                        vidPath = get_video_path()
+                        path = clipper(vidPath, video_id, learn_query)
+                        videoFile = open(path, 'rb')
+                        videoBytes = videoFile.read()
+                        st.video(videoBytes)
+                        submitted = st.form_submit_button(label="Done")

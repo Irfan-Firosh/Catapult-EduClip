@@ -1,0 +1,289 @@
+{
+    "result": [
+        {
+            "type": "video",
+            "id": "pYT9F8_LFTM",
+            "title": "Data structures: Binary Search Tree",
+            "publishedTime": "10 years ago",
+            "duration": "19:28",
+            "viewCount": {
+                "text": "1,318,904 views",
+                "short": "1.3M views"
+            },
+            "thumbnails": [
+                {
+                    "url": "https://i.ytimg.com/vi/pYT9F8_LFTM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgyRLtzNkKzMxlAlr-APnsj-95SA",
+                    "width": 360,
+                    "height": 202
+                },
+                {
+                    "url": "https://i.ytimg.com/vi/pYT9F8_LFTM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB0Kq1bfZGYe9w2fQK6ZEr6vpDlFw",
+                    "width": 720,
+                    "height": 404
+                }
+            ],
+            "richThumbnail": null,
+            "descriptionSnippet": [
+                {
+                    "text": "In this lesson, we have discussed "
+                },
+                {
+                    "text": "binary search tree",
+                    "bold": true
+                },
+                {
+                    "text": " data structure. Binary search is an efficient data structure in which we can\u00a0..."
+                }
+            ],
+            "channel": {
+                "name": "mycodeschool",
+                "id": "UClEEsT7DkdVO_fkrBw0OTrA",
+                "thumbnails": [
+                    {
+                        "url": "https://yt3.ggpht.com/ytc/AIdro_nTfCBxKJ1sqZSKX_NlAlWIdxox7fE7ID73Q2bi=s68-c-k-c0x00ffffff-no-rj",
+                        "width": 68,
+                        "height": 68
+                    }
+                ],
+                "link": "https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA"
+            },
+            "accessibility": {
+                "title": "Data structures: Binary Search Tree by mycodeschool 1,318,904 views 10 years ago 19 minutes",
+                "duration": "19 minutes, 28 seconds"
+            },
+            "link": "https://www.youtube.com/watch?v=pYT9F8_LFTM",
+            "shelfTitle": null
+        },
+        {
+            "type": "video",
+            "id": "mtvbVLK5xDQ",
+            "title": "Binary Search Trees (BST) Explained in Animated Demo",
+            "publishedTime": "9 years ago",
+            "duration": "6:02",
+            "viewCount": {
+                "text": "113,760 views",
+                "short": "113K views"
+            },
+            "thumbnails": [
+                {
+                    "url": "https://i.ytimg.com/vi/mtvbVLK5xDQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAQgk0JM5SRyctsnfeVPLMKuHQSqA",
+                    "width": 360,
+                    "height": 202
+                },
+                {
+                    "url": "https://i.ytimg.com/vi/mtvbVLK5xDQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZNEBYIMyN64zYMbrjrlj27z7FvQ",
+                    "width": 720,
+                    "height": 404
+                }
+            ],
+            "richThumbnail": {
+                "url": "https://i.ytimg.com/an_webp/mtvbVLK5xDQ/mqdefault_6s.webp?du=3000&sqp=CPSupLAG&rs=AOn4CLDfyiT6vJ4p2T9Bj300kTgIHq_d-Q",
+                "width": 320,
+                "height": 180
+            },
+            "descriptionSnippet": [
+                {
+                    "text": "Binary Search Trees",
+                    "bold": true
+                },
+                {
+                    "text": " (BST) explained in animated demo with insert, delete and find operations, traversal, and tree terminology."
+                }
+            ],
+            "channel": {
+                "name": "Oggi AI - Artificial Intelligence Today",
+                "id": "UC4Xt-DUAapAtkfaWWkv4OAw",
+                "thumbnails": [
+                    {
+                        "url": "https://yt3.ggpht.com/hSW5uFO_WhWpC1cCX8tkGuMBL9qpkT_ycDjhLaV2L2uw-kqlF2xxyXpFuBb0SI8do-548IXBfw=s68-c-k-c0x00ffffff-no-rj",
+                        "width": 68,
+                        "height": 68
+                    }
+                ],
+                "link": "https://www.youtube.com/channel/UC4Xt-DUAapAtkfaWWkv4OAw"
+            },
+            "accessibility": {
+                "title": "Binary Search Trees (BST) Explained in Animated Demo by Oggi AI - Artificial Intelligence Today 113,760 views 9 years ago 6 minutes, 2 seconds",
+                "duration": "6 minutes, 2 seconds"
+            },
+            "link": "https://www.youtube.com/watch?v=mtvbVLK5xDQ",
+            "shelfTitle": null
+        },
+        {
+            "type": "video",
+            "id": "Gt2yBZAhsGM",
+            "title": "Learn Binary search trees in 20 minutes \ud83d\udd0d",
+            "publishedTime": "2 years ago",
+            "duration": "20:25",
+            "viewCount": {
+                "text": "112,184 views",
+                "short": "112K views"
+            },
+            "thumbnails": [
+                {
+                    "url": "https://i.ytimg.com/vi/Gt2yBZAhsGM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGCXanTO-Fi-Y9M6v5NJ47MW41vA",
+                    "width": 360,
+                    "height": 202
+                },
+                {
+                    "url": "https://i.ytimg.com/vi/Gt2yBZAhsGM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBgRwAyolIax4CPSfQCrS3JKJ5VJA",
+                    "width": 720,
+                    "height": 404
+                }
+            ],
+            "richThumbnail": {
+                "url": "https://i.ytimg.com/an_webp/Gt2yBZAhsGM/mqdefault_6s.webp?du=3000&sqp=COu5pLAG&rs=AOn4CLCW6XHHkU1d44pD7Mqt9XdcV1O8pQ",
+                "width": 320,
+                "height": 180
+            },
+            "descriptionSnippet": [
+                {
+                    "text": "Binary search tree",
+                    "bold": true
+                },
+                {
+                    "text": " data structures and algorithms java #"
+                },
+                {
+                    "text": "binary",
+                    "bold": true
+                },
+                {
+                    "text": " #"
+                },
+                {
+                    "text": "search",
+                    "bold": true
+                },
+                {
+                    "text": " #"
+                },
+                {
+                    "text": "tree",
+                    "bold": true
+                },
+                {
+                    "text": "."
+                }
+            ],
+            "channel": {
+                "name": "Bro Code",
+                "id": "UC4SVo0Ue36XCfOyb5Lh1viQ",
+                "thumbnails": [
+                    {
+                        "url": "https://yt3.ggpht.com/ytc/AIdro_nLqPcwW74ZC3x9-aHt0xdsKl2UYaBVTijraYjHLw=s68-c-k-c0x00ffffff-no-rj",
+                        "width": 68,
+                        "height": 68
+                    }
+                ],
+                "link": "https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ"
+            },
+            "accessibility": {
+                "title": "Learn Binary search trees in 20 minutes \ud83d\udd0d by Bro Code 112,184 views 2 years ago 20 minutes",
+                "duration": "20 minutes, 25 seconds"
+            },
+            "link": "https://www.youtube.com/watch?v=Gt2yBZAhsGM",
+            "shelfTitle": null
+        },
+        {
+            "type": "video",
+            "id": "9Jry5-82I68",
+            "title": "Lecture 5: Binary Search Trees, BST Sort",
+            "publishedTime": "11 years ago",
+            "duration": "52:40",
+            "viewCount": {
+                "text": "605,035 views",
+                "short": "605K views"
+            },
+            "thumbnails": [
+                {
+                    "url": "https://i.ytimg.com/vi/9Jry5-82I68/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD85e5aDikNC66tSzQqkt1PcvMR5w",
+                    "width": 480,
+                    "height": 270
+                }
+            ],
+            "richThumbnail": {
+                "url": "https://i.ytimg.com/an_webp/9Jry5-82I68/mqdefault_6s.webp?du=3000&sqp=CKS9pLAG&rs=AOn4CLAvEqE5gHJSiATo-1MFCCqwoNzPsg",
+                "width": 320,
+                "height": 180
+            },
+            "descriptionSnippet": [
+                {
+                    "text": "MIT 6.006 Introduction to Algorithms, Fall 2011 View the complete course: http://ocw.mit.edu/6-006F11 Instructor: Srini Devadas\u00a0..."
+                }
+            ],
+            "channel": {
+                "name": "MIT OpenCourseWare",
+                "id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "thumbnails": [
+                    {
+                        "url": "https://yt3.ggpht.com/e1KUKBD5xAGuyy68Y-q3JECx8XkRGYSZLy9DbZfaVZuDPiaTFbgrc67j5VYFBpvQdu8K-xVBTw=s68-c-k-c0x00ffffff-no-rj",
+                        "width": 68,
+                        "height": 68
+                    }
+                ],
+                "link": "https://www.youtube.com/channel/UCEBb1b_L6zDS3xTUrIALZOw"
+            },
+            "accessibility": {
+                "title": "Lecture 5: Binary Search Trees, BST Sort by MIT OpenCourseWare 605,035 views 11 years ago 52 minutes",
+                "duration": "52 minutes, 40 seconds"
+            },
+            "link": "https://www.youtube.com/watch?v=9Jry5-82I68",
+            "shelfTitle": null
+        },
+        {
+            "type": "video",
+            "id": "i_Q0v_Ct5lY",
+            "title": "Data Structures: Binary Search Tree",
+            "publishedTime": "7 years ago",
+            "duration": "6:31",
+            "viewCount": {
+                "text": "97,389 views",
+                "short": "97K views"
+            },
+            "thumbnails": [
+                {
+                    "url": "https://i.ytimg.com/vi/i_Q0v_Ct5lY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfXxnbKrwFRBbMvntTaX31uEJHYw",
+                    "width": 360,
+                    "height": 202
+                },
+                {
+                    "url": "https://i.ytimg.com/vi/i_Q0v_Ct5lY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdkElSou72UAPp9sndERlWasU8fQ",
+                    "width": 720,
+                    "height": 404
+                }
+            ],
+            "richThumbnail": null,
+            "descriptionSnippet": [
+                {
+                    "text": "Learn how to detect if a tree is a valid "
+                },
+                {
+                    "text": "binary search tree",
+                    "bold": true
+                },
+                {
+                    "text": ". This video is a part of HackerRank's Cracking The Coding Interview\u00a0..."
+                }
+            ],
+            "channel": {
+                "name": "HackerRank",
+                "id": "UCOf7UPMHBjAavgD0Qw5q5ww",
+                "thumbnails": [
+                    {
+                        "url": "https://yt3.ggpht.com/QHSRlsZ1dd73aFXa-tvXXKaLLMKT_oN_yt5AJD1P0JPaLRbY57vxd4OiySpqRnHeVLpTHDbY3A=s68-c-k-c0x00ffffff-no-rj",
+                        "width": 68,
+                        "height": 68
+                    }
+                ],
+                "link": "https://www.youtube.com/channel/UCOf7UPMHBjAavgD0Qw5q5ww"
+            },
+            "accessibility": {
+                "title": "Data Structures: Binary Search Tree by HackerRank 97,389 views 7 years ago 6 minutes, 31 seconds",
+                "duration": "6 minutes, 31 seconds"
+            },
+            "link": "https://www.youtube.com/watch?v=i_Q0v_Ct5lY",
+            "shelfTitle": null
+        }
+    ]
+}

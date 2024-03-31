@@ -1,212 +1,612 @@
 [
     {
-        "text": "[Music]",
-        "start": 1.12,
-        "duration": 15.56
+        "text": "hi i'm joe james in this video is going",
+        "start": 4.43,
+        "duration": 5.83
     },
     {
-        "text": "let's find 24 to the power 38 modulo 7",
-        "start": 12.019,
-        "duration": 6.52
+        "text": "to cover binary search trees so a tree",
+        "start": 7.08,
+        "duration": 5.79
     },
     {
-        "text": "and I'm going to use a little from all",
-        "start": 16.68,
-        "duration": 5.22
-    },
-    {
-        "text": "little theorem in here so 24 to the 38",
-        "start": 18.539,
-        "duration": 5.701
-    },
-    {
-        "text": "modulo 7 first thing I'll note is that",
-        "start": 21.9,
-        "duration": 6.449
-    },
-    {
-        "text": "24 actually is is larger than seven so",
-        "start": 24.24,
-        "duration": 6.39
-    },
-    {
-        "text": "I'm going to first say that 24 to this",
-        "start": 28.349,
-        "duration": 5.191
-    },
-    {
-        "text": "38 is actually congruent to well let's",
-        "start": 30.63,
-        "duration": 4.859
-    },
-    {
-        "text": "see what's the remainder when 24 is",
-        "start": 33.54,
-        "duration": 5.76
-    },
-    {
-        "text": "divided by 7 7 goes in 3 times 4 21 with",
-        "start": 35.489,
-        "duration": 6.211
-    },
-    {
-        "text": "a remainder of 3 so this is the same as",
-        "start": 39.3,
-        "duration": 6.0
-    },
-    {
-        "text": "3 to the 38 modulo 7 remember we're",
-        "start": 41.7,
-        "duration": 7.23
-    },
-    {
-        "text": "working modulo 7 okay since 3 & 7 are",
-        "start": 45.3,
-        "duration": 5.7
-    },
-    {
-        "text": "relatively prime and P is a prime that",
-        "start": 48.93,
-        "duration": 7.14
-    },
-    {
-        "text": "means that 3 to the power of P minus 1",
-        "start": 51.0,
-        "duration": 8.1
-    },
-    {
-        "text": "which be 6 here is congruent let's put",
-        "start": 56.07,
-        "duration": 6.329
-    },
-    {
-        "text": "this in a different color actually 3 to",
-        "start": 59.1,
+        "text": "is a collection of nodes with edges that",
+        "start": 10.26,
         "duration": 5.61
     },
     {
-        "text": "the power of P minus 1 which is 6 is",
-        "start": 62.399,
-        "duration": 6.691
-    },
-    {
-        "text": "congruent to 1 mod 7 and that would be",
-        "start": 64.71,
-        "duration": 6.96
-    },
-    {
-        "text": "by for Maw's little theorem 3 to the",
-        "start": 69.09,
-        "duration": 6.029
-    },
-    {
-        "text": "power 6 is congruent to 1 mod 7 so that",
-        "start": 71.67,
-        "duration": 4.47
-    },
-    {
-        "text": "means I'm going to take this one right",
-        "start": 75.119,
-        "duration": 3.781
-    },
-    {
-        "text": "here and take that power of 38 on the 3",
-        "start": 76.14,
-        "duration": 7.44
-    },
-    {
-        "text": "and change this into 3 ^ let's see",
-        "start": 78.9,
-        "duration": 7.8
-    },
-    {
-        "text": "what's 38 2 divided by 6 would be 6",
-        "start": 83.58,
-        "duration": 7.289
-    },
-    {
-        "text": "copies of 6 for 36 plus 2 so that would",
-        "start": 86.7,
-        "duration": 8.9
-    },
-    {
-        "text": "be congruent to 3 to the 6th to the 6th",
-        "start": 90.869,
-        "duration": 9.531
-    },
-    {
-        "text": "times by 3 squared ok now remember 3 to",
-        "start": 95.6,
-        "duration": 6.57
-    },
-    {
-        "text": "the 6 by 4 loss little theorem is",
-        "start": 100.4,
-        "duration": 4.29
-    },
-    {
-        "text": "congruent to 1 so this is the same as 1",
-        "start": 102.17,
-        "duration": 6.72
-    },
-    {
-        "text": "to the 6th times 3 squared and of course",
-        "start": 104.69,
-        "duration": 6.719
-    },
-    {
-        "text": "1 does the sixth is 1 and 3 squared is",
-        "start": 108.89,
+        "text": "connect them the nodes are organized in",
+        "start": 12.87,
         "duration": 5.64
     },
     {
-        "text": "just 9 so this is congruent to 9 but",
-        "start": 111.409,
-        "duration": 6.031
+        "text": "two levels and the top level is called",
+        "start": 15.87,
+        "duration": 6.239
     },
     {
-        "text": "remember the whole problem was modulo 7",
-        "start": 114.53,
-        "duration": 5.01
+        "text": "the root node each node can have child",
+        "start": 18.51,
+        "duration": 6.48
     },
     {
-        "text": "so what is the remainder when you divide",
-        "start": 117.44,
-        "duration": 3.539
+        "text": "nodes in this case v3 is a parent node",
+        "start": 22.109,
+        "duration": 6.151
     },
     {
-        "text": "9 by 7",
-        "start": 119.54,
-        "duration": 5.82
+        "text": "and it has a left child and a right",
+        "start": 24.99,
+        "duration": 5.4
     },
     {
-        "text": "well 7 goes into 9 one time with 2 left",
-        "start": 120.979,
-        "duration": 4.981
+        "text": "child and the left and right child are",
+        "start": 28.26,
+        "duration": 4.139
     },
     {
-        "text": "over",
-        "start": 125.36,
-        "duration": 3.06
+        "text": "called siblings because they share the",
+        "start": 30.39,
+        "duration": 5.55
     },
     {
-        "text": "so overall the final answer to this",
-        "start": 125.96,
-        "duration": 4.74
+        "text": "same parent the 1 4 6 and 9 nodes here",
+        "start": 32.399,
+        "duration": 5.641
     },
     {
-        "text": "problem is that the remainder modulo 7",
-        "start": 128.42,
+        "text": "are called leaf nodes because they don't",
+        "start": 35.94,
         "duration": 4.86
     },
     {
-        "text": "is going to be the answer is 2 so the",
-        "start": 130.7,
-        "duration": 5.99
+        "text": "have any child nodes in a binary tree",
+        "start": 38.04,
+        "duration": 5.1
     },
     {
-        "text": "final answer to the problem is 2",
-        "start": 133.28,
-        "duration": 3.41
+        "text": "each node can have up to two child nodes",
+        "start": 40.8,
+        "duration": 6.18
+    },
+    {
+        "text": "a left child and a right child node 5's",
+        "start": 43.14,
+        "duration": 5.37
+    },
+    {
+        "text": "right subtree includes everything in",
+        "start": 46.98,
+        "duration": 5.149
+    },
+    {
+        "text": "this triangle which is a tree in itself",
+        "start": 48.51,
+        "duration": 7.76
+    },
+    {
+        "text": "under node 5 node 5 is left subtree",
+        "start": 52.129,
+        "duration": 9.52
+    },
+    {
+        "text": "includes nose 3 1 and 4 node 4 has",
+        "start": 56.27,
+        "duration": 8.349
+    },
+    {
+        "text": "ancestors which are simply every node",
+        "start": 61.649,
+        "duration": 6.351
+    },
+    {
+        "text": "between itself and the root node and",
+        "start": 64.619,
+        "duration": 6.93
+    },
+    {
+        "text": "node 5 has descendants but basically",
+        "start": 68.0,
+        "duration": 6.13
+    },
+    {
+        "text": "every node below it all of his children",
+        "start": 71.549,
+        "duration": 4.381
+    },
+    {
+        "text": "node and their children's nodes and so",
+        "start": 74.13,
+        "duration": 5.43
+    },
+    {
+        "text": "on in a binary search tree each node is",
+        "start": 75.93,
+        "duration": 5.939
+    },
+    {
+        "text": "greater than every node in its left",
+        "start": 79.56,
+        "duration": 5.16
+    },
+    {
+        "text": "subtree so for example 15 is greater",
+        "start": 81.869,
+        "duration": 6.301
+    },
+    {
+        "text": "than every node in the left subtree node",
+        "start": 84.72,
+        "duration": 5.759
+    },
+    {
+        "text": "8 is greater than every node in its left",
+        "start": 88.17,
+        "duration": 5.309
+    },
+    {
+        "text": "subtree node 5 is greater than the two",
+        "start": 90.479,
+        "duration": 6.271
+    },
+    {
+        "text": "in its left subtree no 24 is greater",
+        "start": 93.479,
+        "duration": 5.611
+    },
+    {
+        "text": "than 19 in its left subtree and so on",
+        "start": 96.75,
+        "duration": 6.299
+    },
+    {
+        "text": "and each node is less than every node in",
+        "start": 99.09,
+        "duration": 6.72
+    },
+    {
+        "text": "its right subtree so here we can see",
+        "start": 103.049,
+        "duration": 5.61
+    },
+    {
+        "text": "that node 15 is less than all the",
+        "start": 105.81,
+        "duration": 6.089
+    },
+    {
+        "text": "members of its right subtree 24 is less",
+        "start": 108.659,
+        "duration": 5.1
+    },
+    {
+        "text": "than the members of its right subtree 8",
+        "start": 111.899,
+        "duration": 3.661
+    },
+    {
+        "text": "is less than the members of its right",
+        "start": 113.759,
+        "duration": 3.72
+    },
+    {
+        "text": "subtree and so on these two",
+        "start": 115.56,
+        "duration": 3.93
+    },
+    {
+        "text": "characteristics make a binary search",
+        "start": 117.479,
+        "duration": 4.89
+    },
+    {
+        "text": "tree binary search tree operations we",
+        "start": 119.49,
+        "duration": 6.839
+    },
+    {
+        "text": "have insert find and delete so for a",
+        "start": 122.369,
+        "duration": 6.331
+    },
+    {
+        "text": "binary search tree insertion we start at",
+        "start": 126.329,
+        "duration": 5.611
+    },
+    {
+        "text": "the root which is node 15 let's say we",
+        "start": 128.7,
+        "duration": 4.2
+    },
+    {
+        "text": "want to in",
+        "start": 131.94,
+        "duration": 3.45
+    },
+    {
+        "text": "at 12 we're always going to insert a",
+        "start": 132.9,
+        "duration": 5.64
+    },
+    {
+        "text": "node as a leaf so our first comparison",
+        "start": 135.39,
+        "duration": 6.9
+    },
+    {
+        "text": "will compare 12 to 15 12 is less than 15",
+        "start": 138.54,
+        "duration": 6.69
+    },
+    {
+        "text": "we take the left child we compare 12 to",
+        "start": 142.29,
+        "duration": 5.369
+    },
+    {
+        "text": "8 12 is greater than 8 so we take the",
+        "start": 145.23,
+        "duration": 6.959
+    },
+    {
+        "text": "right child to compare 12 to 11 12 is",
+        "start": 147.659,
+        "duration": 6.241
+    },
+    {
+        "text": "greater than 11 so we take the right",
+        "start": 152.189,
+        "duration": 6.181
+    },
+    {
+        "text": "child will compare 12 to 13 12 is less",
+        "start": 153.9,
+        "duration": 8.88
+    },
+    {
+        "text": "than 13 13 has no children so we add 12",
+        "start": 158.37,
+        "duration": 7.53
+    },
+    {
+        "text": "as a new left child for note 13 so we",
+        "start": 162.78,
+        "duration": 5.28
+    },
+    {
+        "text": "can see that no 12 is inserted as a leaf",
+        "start": 165.9,
+        "duration": 4.83
+    },
+    {
+        "text": "node for the binary search we find",
+        "start": 168.06,
+        "duration": 5.509
+    },
+    {
+        "text": "operation we also start at the root",
+        "start": 170.73,
+        "duration": 6.3
+    },
+    {
+        "text": "let's say we want to find out 19 our",
+        "start": 173.569,
+        "duration": 7.601
+    },
+    {
+        "text": "first comparison is 19 less than 15 no",
+        "start": 177.03,
+        "duration": 5.909
+    },
+    {
+        "text": "it is not so we take the right subtree",
+        "start": 181.17,
+        "duration": 5.789
+    },
+    {
+        "text": "is 19 less than 24 yes it is and there",
+        "start": 182.939,
+        "duration": 7.83
+    },
+    {
+        "text": "we found 19 already so find operation is",
+        "start": 186.959,
+        "duration": 6.661
+    },
+    {
+        "text": "pretty simple and the binary search tree",
+        "start": 190.769,
+        "duration": 4.62
+    },
+    {
+        "text": "delete operation there are three",
+        "start": 193.62,
+        "duration": 4.29
+    },
+    {
+        "text": "possible cases either the node you want",
+        "start": 195.389,
+        "duration": 5.611
+    },
+    {
+        "text": "to delete is a leaf node it has one",
+        "start": 197.91,
+        "duration": 5.43
+    },
+    {
+        "text": "child or it has two children and we'll",
+        "start": 201.0,
+        "duration": 3.56
+    },
+    {
+        "text": "look at each case separately",
+        "start": 203.34,
+        "duration": 3.81
+    },
+    {
+        "text": "so first let's say we want to delete a",
+        "start": 204.56,
+        "duration": 5.98
+    },
+    {
+        "text": "node is a leaf node now in this tree we",
+        "start": 207.15,
+        "duration": 7.53
+    },
+    {
+        "text": "can see that nodes 2 6 12 19 and 25 are",
+        "start": 210.54,
+        "duration": 7.169
+    },
+    {
+        "text": "all leaf nodes so if we want to delete",
+        "start": 214.68,
+        "duration": 5.04
+    },
+    {
+        "text": "one we can simply delete it without",
+        "start": 217.709,
+        "duration": 4.321
+    },
+    {
+        "text": "affecting the rest of the tree now if we",
+        "start": 219.72,
+        "duration": 4.799
+    },
+    {
+        "text": "want to delete a node that has one child",
+        "start": 222.03,
+        "duration": 5.069
+    },
+    {
+        "text": "and in our tree example here we can see",
+        "start": 224.519,
+        "duration": 5.58
+    },
+    {
+        "text": "that nodes 11 13 28 all have one child",
+        "start": 227.099,
+        "duration": 5.64
+    },
+    {
+        "text": "if we want to delete for example node 11",
+        "start": 230.099,
+        "duration": 6.091
+    },
+    {
+        "text": "we can see that 11 is node 8 right child",
+        "start": 232.739,
+        "duration": 7.231
+    },
+    {
+        "text": "so we make Elevens only child 13 eats",
+        "start": 236.19,
+        "duration": 4.56
+    },
+    {
+        "text": "right child",
+        "start": 239.97,
+        "duration": 3.18
+    },
+    {
+        "text": "in other words 13 takes the Elevens",
+        "start": 240.75,
+        "duration": 7.049
+    },
+    {
+        "text": "place and then we can delete node 11 now",
+        "start": 243.15,
+        "duration": 6.989
+    },
+    {
+        "text": "note here that node 12 stays attached as",
+        "start": 247.799,
+        "duration": 4.34
+    },
+    {
+        "text": "13 s left child and that does not change",
+        "start": 250.139,
+        "duration": 5.31
+    },
+    {
+        "text": "it does move up a level in the tree but",
+        "start": 252.139,
+        "duration": 5.59
+    },
+    {
+        "text": "it stays attached as 13 s left child so",
+        "start": 255.449,
+        "duration": 6.33
+    },
+    {
+        "text": "13 s sub tree is not affected now if we",
+        "start": 257.729,
+        "duration": 6.211
+    },
+    {
+        "text": "want to do a delete operation with two",
+        "start": 261.779,
+        "duration": 4.26
+    },
+    {
+        "text": "children let's say we want to delete",
+        "start": 263.94,
+        "duration": 2.76
+    },
+    {
+        "text": "node",
+        "start": 266.039,
+        "duration": 4.171
+    },
+    {
+        "text": "24 which we can see has a left child and",
+        "start": 266.7,
+        "duration": 6.15
+    },
+    {
+        "text": "the right child we find the next higher",
+        "start": 270.21,
+        "duration": 5.79
+    },
+    {
+        "text": "node so we do that we look at node 24",
+        "start": 272.85,
+        "duration": 7.35
+    },
+    {
+        "text": "we follow the right subtree node 28 and",
+        "start": 276.0,
+        "duration": 6.93
+    },
+    {
+        "text": "then we look at left child and left",
+        "start": 280.2,
+        "duration": 4.53
+    },
+    {
+        "text": "child continue down to the leftmost path",
+        "start": 282.93,
+        "duration": 3.57
+    },
+    {
+        "text": "until we get to the bottom in this case",
+        "start": 284.73,
+        "duration": 6.27
+    },
+    {
+        "text": "there's only one edge - no 25 so that is",
+        "start": 286.5,
+        "duration": 7.86
+    },
+    {
+        "text": "the next highest node from 24 so in this",
+        "start": 291.0,
+        "duration": 6.81
+    },
+    {
+        "text": "case we can change the 24 to 25 and",
+        "start": 294.36,
+        "duration": 6.48
+    },
+    {
+        "text": "delete no 25 in the last case let's say",
+        "start": 297.81,
+        "duration": 4.71
+    },
+    {
+        "text": "we want to delete the node that has 2",
+        "start": 300.84,
+        "duration": 5.01
+    },
+    {
+        "text": "children this case node 4 so 4 has left",
+        "start": 302.52,
+        "duration": 5.88
+    },
+    {
+        "text": "child and the right child so first we're",
+        "start": 305.85,
+        "duration": 5.19
+    },
+    {
+        "text": "going to find the next higher node which",
+        "start": 308.4,
+        "duration": 6.87
+    },
+    {
+        "text": "is 6 we changed a four to A six and then",
+        "start": 311.04,
+        "duration": 6.96
+    },
+    {
+        "text": "we can delete node 6 and since the",
+        "start": 315.27,
+        "duration": 5.94
+    },
+    {
+        "text": "delete operation is done recursively the",
+        "start": 318.0,
+        "duration": 6.3
+    },
+    {
+        "text": "7 basically takes 6 is place and the 6",
+        "start": 321.21,
+        "duration": 6.6
+    },
+    {
+        "text": "is gone so the advantage of binary",
+        "start": 324.3,
+        "duration": 7.71
+    },
+    {
+        "text": "search trees speed we can insert delete",
+        "start": 327.81,
+        "duration": 7.8
+    },
+    {
+        "text": "and find in Big O of H speed which is",
+        "start": 332.01,
+        "duration": 6.21
+    },
+    {
+        "text": "Big O of the height of the tree that",
+        "start": 335.61,
+        "duration": 4.83
+    },
+    {
+        "text": "means that an a balanced binary search",
+        "start": 338.22,
+        "duration": 5.49
+    },
+    {
+        "text": "tree with ten million nodes find insert",
+        "start": 340.44,
+        "duration": 5.49
+    },
+    {
+        "text": "and delete operations take only on the",
+        "start": 343.71,
+        "duration": 4.5
+    },
+    {
+        "text": "order of 30 comparisons which is",
+        "start": 345.93,
+        "duration": 4.86
+    },
+    {
+        "text": "incredibly fast that wraps up our",
+        "start": 348.21,
+        "duration": 4.74
+    },
+    {
+        "text": "introduction to binary search trees I'm",
+        "start": 350.79,
+        "duration": 5.42
+    },
+    {
+        "text": "Joe James thanks for watching",
+        "start": 352.95,
+        "duration": 3.26
     }
 ]
