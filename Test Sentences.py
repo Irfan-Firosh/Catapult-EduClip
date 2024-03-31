@@ -66,4 +66,4 @@ def clipper(file_name, id, question):
     start = val[0]["start"]
     end = val[1]["start"] + val[1]["duration"]
     clip = VideoFileClip(file_name).subclip(start,end)
-    clip.write_videofile("\metadata\Extracted\output.mp4")
+    clip.write_videofile("metadata\extracted\output.mp4")
