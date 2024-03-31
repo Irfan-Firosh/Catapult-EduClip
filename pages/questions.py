@@ -3,7 +3,7 @@ import google.generativeai as genai
 import keys
 
 st.title("Question Bot")
-client = keys.GOOGLE_API_KEY  # Make sure keys.GOOGLE_API_KEY is correctly defined
+client = 'AIzaSyAA6BCdze835zhzzzQaZ4gygHfZvK4OpDI'  # Make sure keys.GOOGLE_API_KEY is correctly defined
 
 genai.configure(api_key=client)
 model = genai.GenerativeModel('gemini-pro')
