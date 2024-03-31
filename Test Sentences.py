@@ -1,6 +1,7 @@
 from sentence_transformers import SentenceTransformer, util
 from GeminiSimilarSentences import *
 from segment import *
+from moviepy.editor import VideoFileClip
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -39,11 +40,11 @@ def similarity(original, values):
     
 
 # Main code
-def kum(id, Question):
+def find_seg(id, Question):
 
-    to_return, kumbucket2 = getSegment(id, 50) 
+    to_return, bucket = getSegment(id, 30) 
     original_string = Question
-    cosine_scores = similarity(original_string, kumbucket2)
+    cosine_scores = similarity(original_string, bucket)
 
     pairs = []
     for i in range(len(cosine_scores)):
@@ -53,19 +54,16 @@ def kum(id, Question):
     pairs = sorted(pairs, key=lambda x: x["score"], reverse=True)
 
     # Get the indexes of top 5 similar sentences
-    top_indexes = [pair["index"] for pair in pairs[:5]]
+    top_indexes = [pair["index"] for pair in pairs[:1]]
 
     # Extract corresponding elements from to_return using top_indexes
     corresponding_elements = [to_return[index] for index in top_indexes]
 
     return corresponding_elements
 
-if __name__ == "__main__":
-    # Sample input
-    video_id = "zEQZpTizgLo"
-    question = "What is the height of a binary tree?"
-
-    # Call the kum function
-    result = kum(video_id, question)
-    # Print the result
-    print("Result:", result)
+def clipper(file_name, id, question):
+    val = find_seg(id, question)
+    start = val[0]["start"]
+    end = val[1]["start"] + val[1]["duration"]
+    clip = VideoFileClip(file_name).subclip(start,end)
+    clip.write_videofile("\metadata\Extracted\output.mp4")
