@@ -1,6 +1,5 @@
 import streamlit as st
 from videoOperations import *
-from GeminiPull import *
 from editor import *
 import time
 
@@ -11,11 +10,6 @@ def getVidId(options, name):
         if options[key] == name:
             return key
 
-def get_num_files():
-    directory_path = "metadata/qna"
-    files_list = os.listdir(directory_path)
-    num_files = len(files_list)
-    return num_files
 
 
 video_id = None
@@ -80,9 +74,6 @@ with col1:
                 os.remove("metadata/qna/question.txt")
                 os.remove("metadata/qna/answer.txt")
                 with st.spinner('Generating Exercises....'):
-                    user_request(learn_query)
-                    while(get_num_files() != 0):
-                        time.sleep(2)
                     st.page_link("pages/questions.py", label="Exercises", icon="❓")
 
             if learn_query:
